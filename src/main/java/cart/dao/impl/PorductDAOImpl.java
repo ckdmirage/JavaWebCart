@@ -28,7 +28,7 @@ public class PorductDAOImpl extends BaseDao implements ProductDAO{
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
-		return products;
+		return null;
 	}
 	
 	public void add(Product product) {
