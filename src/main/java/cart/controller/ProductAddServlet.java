@@ -34,11 +34,15 @@ public class ProductAddServlet extends HttpServlet {
 		
 		productService.add(productName, price, qty, productImasgeBase64);
 		
+		
+		
 		String message = String.format("商品新增成功!<p/>商品名稱:%s<p/>商品價格:%s<p/>商品庫存:%s<p/>商品圖片:<img src='data:image/png;base64,%s'><p/>", 
+		
 					productName,price,qty,productImasgeBase64);
 		req.setAttribute("result","商品新增");
 		req.setAttribute("resultMessage", message);
 		req.getRequestDispatcher("/WEB-INF/view/cart/result.jsp").forward(req, resp);
+		
 	}
 
 
