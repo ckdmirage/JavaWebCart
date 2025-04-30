@@ -12,7 +12,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
 
-@WebFilter(urlPatterns = {"/user/list", "/product/list"})
+@WebFilter(urlPatterns = {"/user/list", "/product/list","/product/*"})
 public class LoginFilter extends HttpFilter {
 
 	protected void doFilter(HttpServletRequest request, HttpServletResponse response, FilterChain chain) 
